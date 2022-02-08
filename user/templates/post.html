@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <center>
+        <h1>Create Post</h1>
+        <form action="/user/post/" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="id" value={{id}}><br>
+            <textarea cols="50" rows="4" name="text">
+            </textarea><br>
+            <input type="datetime-local" name="created_at"><br>
+            <input type="datetime-local" name="updated_at"><br>
+            <input type="submit"><br>
+        </form>
+    </center>
+</body>
+
+</html>
